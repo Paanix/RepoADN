@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0; }
+
+body{
+    background-color: #f0c2c0; }
+
+header {
+    padding-top: 15px; }
+
+
+/* ////////// SECCION HOME ////////// */
+/*GRID HOME*/
+#grillaHome {
+    display: grid;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 80px 800px 250px 250px;
+    grid-template-areas: "logo logo logo logo"
+                         "nav nav nav nav"
+                         "video video video video"
+                         "pago pago pago pago"
+                         "footer footer footer footer"; }
+/*FIN GRID HOME*/
+
+
+/* PARTES DEL GRID HOME */
+#logo {
+    grid-area: logo;
+    padding-top: 15px; }
+
+#carouselExampleControls {
+    grid-area: video;
+    text-align: center; }
+
+#metodosDePago{    
+    grid-area: pago;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px; }
+/* FIN PARTES DEL GRID HOME */
+
+
+/* BARRA NAV */
+.menu {
+    grid-area: nav; 
+
+    &__list {
+    grid-area: "nav";
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #463b52;}
+    
+    &__item{
+        font-size: 20px;
+        width: 10%;
+        text-align: center;
+        color: #f0c2c0;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        text-decoration: none; }
+    
+    &__link{
+        color: #f0c2c0;
+        text-decoration: none; }
+    
+    &__link:hover {
+    cursor: pointer;
+    padding-left: 5px;
+    color:#ee7346; }
+}
+/* FIN BARRA NAV */
+
+
+/* FOOTER */
+.footerStyle {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 20% 40% 20% 20%;
+    grid-template-areas: "mail newslletter direccion rrss";
+    background: #463b52;
+    color: #f0c2c0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    border-spacing: 0px;
+    padding: 25px;
+    margin-top: 55px;
+    list-style-type: none;
+    justify-content: space-between;
+    border-bottom: 35px solid #463b52; 
+
+    &__textoNegritaFooter1 {
+    color: #f0c2c0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400; }
+
+    &__textoNegritaFooter2 {
+    @extend .footerStyle__textoNegritaFooter1;
+    margin: 0%; }
+
+    &__link {
+    @extend .footerStyle__textoNegritaFooter1;
+    font-weight: 100;
+    text-decoration: none;}
+
+    &__link:hover {
+    cursor: pointer;
+    padding-left: 5px;
+    color:#ee7346 !important;
+    margin: 0%; }
+
+    &__textoRegular {
+        @extend .footerStyle__textoNegritaFooter1;
+        font-weight: 100;
+        margin: 0%; }
+
+    &__enviar {
+        margin-top: 10px;
+        padding: 2px; }
+
+    &__textBox {
+        @extend .footerStyle__enviar;
+        padding: 3px; }
+}
+/* FIN FOOTER */
+/* ////////// FIN SECCION HOME ////////// */
+
+
+/* ////////// SECCION PRODUCTOS ////////// */
+
+.teteras {
+    padding-top: 100px;
+    margin: 0px;}
+
+.teteras__h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    color: #ee7346;
+    text-align: center; }
+
+.teteras__p {
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 400;
+     color: #463b52;
+     text-align: center;
+     margin-left: 40px;
+     margin-right: 40px;
+    }
+
+.box_productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    margin: 25px 50px 0px;
+}
+.card {
+    background-color: #ecd8d8;
+    text-align: center;
+    margin: 15px;}
+
+.card-title{
+    font-family: 'Work Sans', sans-serif;
+    color: #544069;
+    font-weight: bolder;
+}
+
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    color: #463b52;
+}
+
+.btn {
+    background-color: #463b52;
+    border-style: hidden;
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: #ee7346;
+    color: #f0c2c0;
+}
+.card a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #f0c2c0;
+}
+
+.card-img-top {
+    padding: 40px;
+}
+/* ////////// FIN SECCION PRODUCTOS ////////// */
+
+
+/* ////////// SECCION HISTORIA ////////// */
+.grillaHistoria {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+    &__JoseAnita {
+        flex-basis: 50%;;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-align: left;
+        color: #463b52;
+        margin-right: 80px;
+        margin: 30px; }
+    
+    &__imgJoseAnita {
+        width: 55%;
+        height: auto;
+        margin: 30px; }
+}
+
+.grillaEquipo {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+    &__imgMisiones {
+        width: 55%;
+        height: auto;
+        margin: 30px;}
+    
+    &__textoEquipo {
+        flex-basis: 50%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-align: right;
+        color: #463b52;;
+        margin-left: 80px;
+        margin: 30px; }
+    }
+/* ////////// FIN SECCION HISTORIA ////////// */
+
+
+/* ////////// SECCION CONTACTO ////////// */
+.grillaInfo {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+
+    &__textoMaps {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-align: left;
+        color: #463b52;
+        padding-left: 15px; }
+
+    &__img {
+        width: 100%
+        height= auto;}
+        
+    &__h1{
+        font-size: xx-large;
+        font-weight: bold; }
+    
+    &__texto{
+        line-height: 0.5; }
+}
+
+
+/*FORMULARIO*/
+.modal-content {
+    background-color: #ecd8d8;
+    border: 0,5px solid #463b52;
+    padding: 25px 25px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+.textoDestacadoFormulario { 
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Open Sans', sans-serif;
+    color: #463b52;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 25px; }
+
+.textoNormalFormulario {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #463b52;
+    font-size: large;
+    padding-top: 0px;
+    padding-bottom: 8px; }
+
+.form-group input {
+    font-size: 15px;
+    border:0;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px;
+    margin-left: 0px;
+    margin-right: 7px;
+    margin-bottom: 8px; }
+
+.form-group textarea {
+    font-size: 15px;
+    border:0;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 0px;
+    margin-bottom: 8px; }
+/*FIN FORMULARIO*/
+
+/* ////////// FIN SECCION CONTACTO ////////// */
+
+
+/* CLASES PARA DAR ESTILOS*/
+.textoDestacado { 
+    font-family: 'Work Sans', sans-serif;
+    color: #463b52;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: x-large; }
+
+.centrado{
+    display:block;
+    margin-left: auto;
+    margin-right: auto; }
+
+.descripcion {
+    color: #463b5294;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small; }
+
+
+/*CELULAR*/
+@media screen and (max-width:600px){
+    /*GRILLA HOME*/    
+    #grillaHome {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px auto 400px auto;
+        grid-template-areas: "logo"
+                             "nav"
+                             "video"
+                             "pago"
+                             "footer"; }
+    /*FIN GRILLA HOME*/    
+
+    /*NAV*/    
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 300px;}
+
+    li{
+        width: 30%;
+    }
+
+    /*FIN NAV*/    
+
+    /*BANNER PROMOS*/
+    #videoBanner video{
+        grid-area: video;
+        height: auto;
+        width: 100%;
+        text-align: center;}
+    /*FIN BANNER PROMOS*/
+
+    /*METODOS DE PAGO*/
+    #metodosDePago{
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px; }
+
+    #metodosDePago img {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        width: 290px;
+        height: 73px; }
+    /*FIN METODOS DE PAGO*/
+    
+    /*GRILLA FOOTER*/
+    .footerStyle {
+        grid-area: footer;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 170px 150px auto;
+        text-align: center; 
+        display: grid;
+        grid-template-areas: "mail" 
+                             "newsletter"
+                             "direccion"
+                             "rrss"; }
+    .footerStyle__consulta {
+        grid-area: mail; }
+    .footerStyle__newsletter {
+        grid-area: newsletter; }
+    .footerStyle__direccion {
+        grid-area: direccion; }
+    .footersStyle__rrss {
+        grid-area: rrss; }
+    /*FIN GRILLA FOOTER*/
+
+
+    /*PRODUCTOS*/
+    .box_productos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    /*TEXTO CONTACTO*/
+    .grillaInfo {
+        flex-direction: column;
+        margin-bottom: 120px;
+    
+        &__textoMaps {
+            text-align: center;
+            margin-bottom: 45px;
+            margin-top: 45px;}      
+        &__h1{
+            margin-top: 40px;
+            padding-top: 40px; }
+
+        }
+
+/*HISTORIA*/
+.grillaEquipo {
+    flex-direction: column ;
+
+    &__imgMisiones {
+        width: 85%;}
+    
+    &__textoEquipo {
+        text-align: center; }
+    }
+
+    .grillaHistoria {
+        flex-direction: column;
+    
+        &__JoseAnita {
+            text-align: center;}
+        
+        &__imgJoseAnita {
+            width: 85%;}
+    }
+    
+
+}
+/*TABLET*/
+@media screen and (min-width:600px) {
+
+    #grillaHome {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 150px auto 300px auto;
+        grid-template-areas: "logo"
+                             "nav nav nav"
+                             "video"
+                             "pago"
+                             "footer footer footer footer";}
+    .menu__list{
+        display: flex;
+        text-align: center;
+        height: 150px;}
+    li{
+        width: 30%;}
+   
+    #videoBanner video{
+        height: auto;
+        width: 100%;
+        text-align: center;}
+
+    .footerStyle {
+        grid-area: footer;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 170px 150px auto;
+        text-align: center; 
+        display: grid;
+        grid-template-areas: "mail" 
+                             "newsletter"
+                             "direccion"
+                             "rrss"; }
+    .footerStyle__consulta {
+        grid-area: mail; }
+    .footerStyle__newsletter {
+        grid-area: newsletter; }
+    .footerStyle__direccion {
+        grid-area: direccion; }
+    .footersStyle__rrss {
+        grid-area: rrss; }
+
+    #metodosDePago{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 70px;
+        padding-left: 15px;
+        padding-right: 15px; }
+    #metodosDePago img {
+        padding-top: 20px;
+        width: 290px;
+        margin-top: 2px;
+        height: 83px; }
+
+
+
+    /*PRODUCTOS*/
+    .box_productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    /*TEXTO CONTACTO*/
+    .grillaInfo {
+        flex-direction: column;
+        margin-bottom: 80px;
+    
+        &__textoMaps {
+            text-align: center;
+            margin-bottom: 45px;}      
+        &__h1{
+            margin-top: 40px;
+            padding-top: 40px; }
+        }
+
+/*HISTORIA*/
+.grillaEquipo {
+    flex-direction: column ;
+
+    &__imgMisiones {
+        width: 85%;}
+    
+    &__textoEquipo {
+        text-align: center; }
+    }
+
+    .grillaHistoria {
+        flex-direction: column;
+    
+        &__JoseAnita {
+            text-align: center;}
+        
+        &__imgJoseAnita {
+            width: 85%;}
+    }
+
+}
+/*DESKTOP*/
+@media screen and (min-width:992px) {
+
+    #grillaHome {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 100px auto 300px auto;
+        grid-template-areas: "logo"
+                             "nav nav nav"
+                             "video"
+                             "pago"
+                             "footer footer footer footer"; }
+
+    .menu__list{
+        grid-area: nav;
+        height: 100px;}
+
+    li{
+        width: 30%;} 
+
+    #videoBanner video{
+        height: auto;
+        width: 100%;
+        text-align: center;}
+
+    .footerStyle {
+        grid-area: footer;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 20% 40%  20% 20%;
+        grid-template-rows: auto;
+        grid-template-areas: "footer1 footer2 footer3 footer4";}
+    
+    .footerStyle__consulta {
+        grid-area: footer1;}
+    .footerStyle__newsletter {
+        grid-area: footer2;}
+    .footerStyle__direccion {
+        grid-area: footer3;}
+    .footersStyle__rrss {
+        grid-area: footer4;}
+    
+    #metodosDePago{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;}
+    #metodosDePago img {
+        padding-top: 30px;
+        width: 290px;
+        height: 93px;}
+
+
+    .grillaInfo {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        height: 550px;
+    
+        &__textoMaps {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: lighter;
+            text-align: left;
+            color: #463b52;
+            padding-left: 15px;
+            margin-left: 55px;
+            margin-right: 35px; }
+    
+        &__img {
+            width: auto;
+            height: auto;}
+            
+        &__h1{
+            font-size: xx-large;
+            font-weight: bold; }
+        
+        &__texto{
+            line-height: 0.5; }
+    }
+
+    /* ////////// SECCION HISTORIA ////////// */
+.grillaHistoria {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+    &__JoseAnita {
+        flex-basis: 50%;;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-align: left;
+        color: #463b52;
+        margin-right: 80px;
+        margin: 30px; }
+    
+    &__imgJoseAnita {
+        width: 55%;
+        height: auto;
+        margin: 30px; }
+}
+
+.grillaEquipo {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+
+    &__imgMisiones {
+        width: 55%;
+        height: auto;
+        margin: 30px;}
+    
+    &__textoEquipo {
+        flex-basis: 50%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-align: right;
+        color: #463b52;;
+        margin-left: 80px;
+        margin: 30px; }
+    }
+}
